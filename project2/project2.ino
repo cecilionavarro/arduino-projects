@@ -23,12 +23,10 @@ void loop() {
   Serial.println((temperature * 9/5)+32);
 
   if (temperature < baselineTemp+2) {
-    Serial.println('hey im here');
     digitalWrite(2, LOW);
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
   } else if (temperature >= baselineTemp+2 && temperature < baselineTemp+4) {
-    Serial.println('hey im here');
     digitalWrite(2, HIGH);
     digitalWrite(3, LOW);
     digitalWrite(4, LOW);
